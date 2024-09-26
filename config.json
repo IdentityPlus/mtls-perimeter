@@ -1,4 +1,5 @@
 {
+    "protocol": "TCP",
     "frontend_address": "192.168.0.99:45432",
     "server_cert": "/etc/local-postgres-perimeter/service-id/pg-perimeter.instant.mtls.app.cer",
     "server_key": "/etc/local-postgres-perimeter/service-id/pg-perimeter.instant.mtls.app.key",
@@ -14,5 +15,6 @@
     "identity_broker_ca": "/etc/local-postgres-perimeter/service-id/identity-plus-root.cer",
     "mtls_id_ttl": 1,
 
-    "backend_address": "192.168.0.99:5432"
+    "backend_address": "192.168.0.99:5432",
+    "verbose": true
 }

@@ -1,0 +1,20 @@
+{
+    "protocol": "HTTP",
+    "frontend_address": "192.168.0.99:49001",
+    "server_cert": "/etc/local-minio.instant.mtls.app/service-id/local-minio.instant.mtls.app.cer",
+    "server_key": "/etc/local-minio.instant.mtls.app/service-id/local-minio.instant.mtls.app.key",
+    "roles_allowed": [
+            "org. administrator",
+            "administrator",
+            "customer"
+    ],
+
+    "mtls_id_directory": "/etc/local-minio.instant.mtls.app",
+    "mtls_id": "Service Agent",
+    "identity_broker": "api.identity.plus",
+    "identity_broker_ca": "/etc/local-minio.instant.mtls.app/service-id/identity-plus-root-ca.cer",
+    "mtls_id_ttl": 1,
+
+    "backend_address": "192.168.0.99:9001",
+    "verbose": false
+}
