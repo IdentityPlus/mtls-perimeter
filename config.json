@@ -1,0 +1,18 @@
+{
+    "frontend_address": "192.168.0.99:45432",
+    "server_cert": "/etc/local-postgres-perimeter/service-id/pg-perimeter.instant.mtls.app.cer",
+    "server_key": "/etc/local-postgres-perimeter/service-id/pg-perimeter.instant.mtls.app.key",
+    "roles_allowed": [
+            "org. administrator",
+            "administrator",
+            "customer"
+    ],
+
+    "mtls_id_directory": "/etc/local-postgres-perimeter",
+    "mtls_id": "PG Perimeter",
+    "identity_broker": "api.identity.plus",
+    "identity_broker_ca": "/etc/local-postgres-perimeter/service-id/identity-plus-root.cer",
+    "mtls_id_ttl": 1,
+
+    "backend_address": "192.168.0.99:5432"
+}
